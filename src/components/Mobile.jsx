@@ -6,11 +6,7 @@ function Mobile(props) {
       <div className="pl-10 text-left lg:w-[45rem]  selection:bg-fuchsia-300 selection:text-fuchsia-900 ">
         Hello, <br className="mb-3" />
         I’m <span className="tracking-wider"> Jessica Ayran</span> (
-        <a
-          className="underline"
-          target="_blank"
-          href="https://me.jexica.design/"
-        >
+        <a className="underline" target="_blank" href="https://jexica.design/">
           jexica
         </a>
         ), <br />a designer and programmer from the SF Bay Area, <br /> focused
