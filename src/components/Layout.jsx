@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "./Navbar";
 
 function Layout(props) {
   const defaultContainer = "w-screen flex";
@@ -11,8 +12,12 @@ function Layout(props) {
       }
     >
       <div className="w-full relative">
-        <div className="pt-10">{props.children}</div>
+        <div className="">{props.children}</div>
       </div>
+      <Navbar
+        themeMode={props.themeMode}
+        toggleColorMode={props.toggleColorMode}
+      />
     </div>
   );
 }

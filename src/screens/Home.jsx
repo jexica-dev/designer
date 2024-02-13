@@ -1,7 +1,11 @@
 import React from "react";
+import Layout from "../components/Layout";
 
-function Home(props) {
-  return <div>Home</div>;
+export default function Home(props) {
+  return (
+    <Layout
+      themeMode={props.themeMode}
+      toggleColorMode={props.toggleColorMode}
+    ></Layout>
+  );
 }
-
-export default Home;
