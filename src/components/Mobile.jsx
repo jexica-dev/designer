@@ -2,8 +2,8 @@ import React from "react";
 
 function Mobile(props) {
   return (
-    <div className="text-wrap py-24  flex flex-col">
-      <div className="lg:w-[45rem]  selection:bg-fuchsia-300 selection:text-fuchsia-900 ">
+    <div className="text-wrap py-24  flex flex-col lg:invisible md:visible sm:visible lg:h-0 lg:p-0">
+      <div className="pl-10 text-left lg:w-[45rem]  selection:bg-fuchsia-300 selection:text-fuchsia-900 ">
         Hello, <br className="mb-3" />
         I’m <span className="tracking-wider"> Jessica Ayran</span> (
         <a

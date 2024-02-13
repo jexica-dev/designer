@@ -22,7 +22,7 @@ function CarouselCard(props) {
   //   };
 
   return (
-    <div className="w-[80%] p-10">
+    <div className="lg:w-[80%] md:w-100 sm:w-screen p-10">
       <Carousel>
         <img src="/images/Jayran_Samplework.png" alt="" srcset="" />
         <img src="/images/Jayran_Samplework2.png" alt="" srcset="" />
