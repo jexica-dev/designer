@@ -12,6 +12,7 @@ function Layout(props) {
       }
     >
       <Navbar
+        className=""
         themeMode={props.themeMode}
         toggleColorMode={props.toggleColorMode}
       />

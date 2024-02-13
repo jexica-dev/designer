@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Navbar(props) {
   return (
     <>
-      <div className=" absolute z-50 right-0 w-64 h-screen ">
+      <div className=" absolute z-50 right-0 w-64 h-screen md:invisible sm:invisible lg:visible invisible">
         <div
           className={
             props.themeMode !== "dark"
