@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function ImageSlider({ slides }) {
-  const [currentIndex, setCurrentUser] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const sliderStyles = {
     height: "100%",
@@ -23,7 +23,7 @@ function ImageSlider({ slides }) {
     transoform: "translate(0, -50)",
     left: "32px",
     fontSize: "50px",
-    color: "#fff",
+    color: "black",
     zIndex: 1,
     cursor: "pointer",
   };
@@ -34,9 +34,21 @@ function ImageSlider({ slides }) {
     transoform: "translate(0, -50)",
     right: "32px",
     fontSize: "50px",
-    color: "#fff",
+    color: "black",
     zIndex: 1,
     cursor: "pointer",
+  };
+
+  const goToPrevious = () => {
+    const isFirstSlide = currentIndex === 0;
+    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const goToNext = () => {
+    const isLastSlide = currentIndex === slides.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
   };
 
   return (
@@ -47,7 +59,7 @@ function ImageSlider({ slides }) {
       <div style={rightArrowStyles} onClick={goToNext}>
         ⟩
       </div>
-      <div style={slideStyles}>Imageslider Here</div>
+      <div style={slideStyles}></div>
     </div>
   );
 }

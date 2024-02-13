@@ -22,7 +22,7 @@ function CarouselCard(props) {
   };
 
   return (
-    <div className="w-3/4">
+    <div className="w-[80%] p-10">
       <div style={containerStyles}>
         <ImageSlider slides={slides} />
       </div>
