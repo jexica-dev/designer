@@ -11,13 +11,13 @@ function Layout(props) {
           : defaultContainer + "bg-neutral-100"
       }
     >
-      <div className="w-full relative">
-        <div className="">{props.children}</div>
-      </div>
       <Navbar
         themeMode={props.themeMode}
         toggleColorMode={props.toggleColorMode}
       />
+      <div className="w-full relative">
+        <div className="">{props.children}</div>
+      </div>
     </div>
   );
 }
