@@ -1,12 +1,12 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useTheme } from "@mui/material";
-import { useContext } from "react";
-import { ColorModeContext } from "";
-import Home from "./screens/Home";
+import { useTheme } from "@mui/material/styles";
+import { ColorModeContext } from "./utilities/ColorModeContext";
 
-function App() {
+import Home from "./screens/Home";
+import { useContext } from "react";
+
+function App(props) {
   const theme = useTheme();
   const colorMode = useContext(ColorModeContext);
 
